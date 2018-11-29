@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Secon Rubber -- HOME</title>
+	<link rel="stylesheet" type="text/css" href="secon.css">
+</head>
+<body>
+	<div class="topnav" id="myTopnav">
+		<img src = "Secon_logo.png"
+         alt = "Secon Logo" 
+         style="width:250px;height:100px;"/>
+	  <a href="about.html">About</a>
+	  <a href="#contact">Contact</a>
+	  <a href="orderform.html">Order Products</a>
+	  <a href="HomePage.html" class="active">Home</a>
+	  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+	    <i class="fa fa-bars"></i>
+	  </a>
+	</div>
+</body>
+</html>
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+	function myFunction() {
+	    document.getElementById("myDropdown").classList.toggle("show");
+	}
+
+	// Close the dropdown menu if the user clicks outside of it
+	window.onclick = function(event) {
+	  if (!event.target.matches('.dropbtn')) {
+
+	    var dropdowns = document.getElementsByClassName("dropdown-content");
+	    var i;
+	    for (i = 0; i < dropdowns.length; i++) {
+	      var openDropdown = dropdowns[i];
+	      if (openDropdown.classList.contains('show')) {
+	        openDropdown.classList.remove('show');
+	      }
+	    }
+	  }
+	}
+</script>
