@@ -1,55 +1,66 @@
 <html>
 <head>
-  <title>Sawcon Rubber</title>
-  <link rel="stylesheet" type="text/css" href="store.css">
+  <title>Secon Rubber -- ORDER FORM</title>
+  <link rel="stylesheet" type="text/css" href="secon.css">
 </head>
 <body>
-<h1>Sawcon Rubber</h1>
+  <div class="topnav" id="myTopnav">
+    <img src = "Secon_logo.png"
+         alt = "Secon Logo" 
+         style="width:250px;height:100px;"/>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="orderform.html" class="active">Order Products</a>
+    <a href="HomePage.html">Home</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
 <form action="processorder.php" method="post">
 <table>
 <caption>Materials Order Form</caption>
 <tr bgcolor="#cccccc">
-  <td width="150">Item</td>
-  <td width="15">Quantity</td>
+  <td width="150" class="header">Item</td>
+  <td width="15" class="header">Quantity</td>
 </tr>
 <tr class="odd">
-  <td>Bonding Tape</td>
-  <td align="center"><input type="text" name="bondqty" size="3" maxlength="3"></td>
+  <td class="center">Bonding Tape</td>
+  <td align="center"><input type="text" name="bondqty"></td>
 </tr>
 <tr class="even">
-  <td>Cellular Sponge</td>
-  <td align="center"><input type="text" name="spongeqty" size="3" maxlength="3"></td>
+  <td class="center">Cellular Sponge</td>
+  <td class="right"><input type="text" name="spongeqty"></td>
 </tr>
 <tr class="odd">
-  <td>Dense Rubber</td>
-  <td align="center"><input type="text" name="rubberqty" size="3"  maxlength="3"></td>
+  <td class="center">Dense Rubber</td>
+  <td align="center"><input type="text" name="rubberqty"></td>
 </tr>
 <tr class="even">
-  <td>Polyethelyne</td>
-  <td align="center"><input type="text" name="polyeqty" size="3"  maxlength="3"></td>
+  <td class="center">Polyethelyne</td>
+  <td align="center"><input type="text" name="polyeqty"></td>
 </tr>
 <tr class="odd">
-  <td>Polyurethane</td>
-  <td align="center"><input type="text" name="polyuqty" size="3"  maxlength="3"></td>
+  <td class="center">Polyurethane</td>
+  <td align="center"><input type="text" name="polyuqty"></td>
 </tr>
 <tr class="even">
-  <td>Poron</td>
-  <td align="center"><input type="text" name="poronqty" size="3"  maxlength="3"></td>
+  <td class="center">Poron</td>
+  <td align="center"><input type="text" name="poronqty"></td>
 </tr>
 <tr class="odd">
-  <td>PVC Foam</td>
-  <td align="center"><input type="text" name="foamqty" size="3"  maxlength="3"></td>
+  <td class="center">PVC Foam</td>
+  <td align="center"><input type="text" name="foamqty"></td>
 </tr>
 <tr class="even">
-  <td>Tapes</td>
-  <td align="center"><input type="text" name="tapeqty" size="3"  maxlength="3"></td>
+  <td class="center">Tapes</td>
+  <td align="center"><input type="text" name="tapeqty"></td>
 </tr>
 <tr class="odd">
-  <td>Films</td>
+  <td class="center">Films</td>
   <td align="center"><input type="text" name="filmqty" size="3"  maxlength="3"></td>
 </tr>
 <tr class="even">
-  <td>How did you find Sawcon?</td>
+  <td class="center">How did you find Secon?</td>
   <td><select name="find">
         <option value = "a">I'm a regular customer</option>
         <option value = "b">TV advertising</option>
