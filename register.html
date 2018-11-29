@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Secon -- Register Customer</title>
+  <link rel="stylesheet" type="text/css" href="secon.css">
+</head>
+
+<body>
+
+  <div class="topnav" id="myTopnav">
+    <img src = "Secon_logo.png"
+         alt = "Secon Logo" 
+         style="width:250px;height:100px;"/>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="orderform.html" class="active">Order Products</a>
+    <a href="HomePage.html">Home</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+  <h1>Secon -- Register Customer</h1>
+
+  <form action="processregister.php" method="post">
+    <table border="0">
+    <caption>Customer Registration Form</caption>
+      <tr class="even">
+        <td>First Name</td>
+         <td><input type="text" name="fname" maxlength="20" size="30"></td>
+      </tr>
+      <tr class="odd">
+        <td>Last Name</td>
+        <td> <input type="text" name="lname" maxlength="25" size="30"></td>
+      </tr>
+      <tr class="even">
+        <td>Email</td>
+        <td> <input type="text" name="email" maxlength="60" size="30"></td>
+      </tr>
+      <tr class="odd">
+        <td>Phone Number</td>
+        <td><input type="text" name="phone" maxlength="10" size="30"></td>
+      </tr>
+      <tr class="even">
+        <td>Address</td>
+        <td><input type="text" name="address" maxlength="60" size="30"></td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center"><input type="submit" value="Register"></td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>
